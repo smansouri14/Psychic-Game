@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    color: black;
+    font-size: 44px;
+    font-display: bold;
+    text-align: center;
+    background: white;
+    width: 100%;
+    background: #42c2f4;
+    padding: 20px;
+    font-family: asap, sans-serif;
+
+}
+#container {
+    color:black;
+    font-size: 34px;
+    font-display: bold;
+    text-align: left;
+    background: white;
+    height:700px;
+}
+#wins {
+    font-family: asap, sans-serif;
+    float: left;
+    width: 50%;
+    background:#c0cace;
+    text-align: center;
+    padding: 20px 0;
+   
+}
+
+#losses {
+    font-family: asap, sans-serif;
+    float: right;
+    background:#97b3bf;
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#guessesLeft{
+    font-family: asap, sans-serif;
+    background:#379ecc;
+    width: 100%;
+    text-align: center;
+}
+
+#lettersGuessed {
+    font-family: asap, sans-serif;
+    background:#42c2f4;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+div {
+    color: black;
+}
