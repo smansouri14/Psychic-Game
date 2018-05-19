@@ -35,7 +35,7 @@ function compare(userChoice, computerChoice){
         guessesLeft = ("0","1", "2", "3", "4", "5", "6", "7", "8", "9","10");
         lettersGuessed = [];
         guessesLeft = 10;
-       
+       reset();
 
     }else if ((guessesLeft === 0) || (lettersGuessed.lenngth === 10)){
         losses++;
@@ -43,11 +43,19 @@ function compare(userChoice, computerChoice){
         document.getElementById('losses').innerHTML = 'losses: ' + losses;
         guessesLeft = 10;
         lettersGuessed = [];
+        reset();
     
     }else if (userChoice !== computerChoice) {
         console.log("lost a letter");
         guessesLeft--;
         document.getElementById('guessesLeft').innerHTML = 'Guesses Left: ' + guessesLeft;   
         document.getElementById('lettersGuessed').innerHTML = 'Letters Guessed: ' + lettersGuessed;
+
+    }
+    function reset() {
+        var computerChoice = letters[Math.floor(Math.random() * letters.length)];
+        console.log("computer choice" , computerChoice);
+
     }
 }
+
