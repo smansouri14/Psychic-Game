@@ -62,3 +62,9 @@
 div {
     color: black;
 }
+
+#bottom {
+    height: 600px;
+    width: 100%;
+    background: #379ecc;
+}
